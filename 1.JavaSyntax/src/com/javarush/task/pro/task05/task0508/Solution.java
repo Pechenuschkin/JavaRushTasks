@@ -21,17 +21,14 @@ public class Solution {
         for (int i = 0; i < strings.length; i++) {
             int number = 0;
             for (int j = 0; j < strings.length; j++) {
-
                 if (strings[i] != null && strings[j] != null) {
                     if (strings[i].equals(strings[j]) && i != j) {
                         strings[j] = null;
                         ++number;
                     }
-
                 }
-
-                }
-            if (number > 0){
+            }
+            if (number > 0) {
                 strings[i] = null;
             }
         }
